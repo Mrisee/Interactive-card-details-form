@@ -29,9 +29,13 @@ Users should be able to:
 ### Screenshot
 
 Desktop designe ![](/screens/Screen1.png)
+
 Active states ![](./screens/Screen2.png)
+
 Mobile active state ![](/screens/Screen3.png)
+
 Complete states ![](/screens/Screen4.png)
+
 
 ### Built with
 
