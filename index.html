@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="background"></div>
+    <div class="container">
+      <div class="content">
+        <div class="cards-column">
+          <div class="cards-box">
+            <div class="card-face">
+              <div class="big-circle"></div>
+              <div class="small-circle"></div>
+              <span id="number">0000 0000 0000 0000</span>
+              <span id="name">Ignacio Fontana</span>
+              <div class="date">
+                <span id="month">00</span>/<span id="year">00</span>
+              </div>
+            </div>
+            <div class="card-back">
+              <span id="cvc-code">000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-column">
+          <div class="input-box">
+            <div class="name-input">
+              <span>Cardholder Name</span>
+              <input type="text" name="" id="name-input" placeholder="e.g. Ignacio Fontana">
+            </div>
+            <div class="number-input">
+              <span>Card Number</span>
+              <input type="text" name="" id="number-input" maxlength="19" placeholder="ee.g. 1234 5678 9123 0000">
+            </div>
+            <div class="other-inputs">
+              <div class="date-input">
+                <span>Exp. Date (MM/YY)</span>
+                <div class="date-input__data">
+                  <input type="text" name="" id="month-input" maxlength="2" placeholder="MM">
+                  <input type="text" name="" id="year-input" maxlength="2" placeholder="YY">
+                </div>
+              </div>
+              <div class="cvc-input">
+                <span>CVC</span>
+                <input type="text" name="" id="cvc-input" maxlength="3" placeholder="e.g. 123">
+              </div>
+            </div>
+            <input type="button" class="confirm-button" value="Confirm">
+            <div class="confirm-error">fields must be filled in completely</div>
+          </div>
+          <div class="complete-box">
+            <img src="images/icon-complete.svg" class="complete-icon" alt="">
+            <span>Thank you!</span>
+            <p> We've added your card details</p>
+            <input type="button" class="continue-button" value="Continue" onclick="window.location.reload();">
+            </div>
+        </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/Mrisee">Nikita Kholodov</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
