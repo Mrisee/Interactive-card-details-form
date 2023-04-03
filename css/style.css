@@ -396,6 +396,9 @@ body {
     width: 100%;
     height: 30%;
   }
+  .cards-box {
+    min-height: 300px;
+  }
   .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -505,6 +508,7 @@ body {
     height: 22%;
   }
   .cards-box {
+    min-height: 240px;
     height: 240px;
   }
   .card-back {
