@@ -50,7 +50,7 @@ confirmButton.addEventListener('click', function() {
             name.style.border = '1px solid red';
             confirmError.style.visibility = 'visible';
         }
-        if (name.value.length == maxLength | name.value != '') {
+        if (name.value.length >= maxLength & name.value != '') {
             name.style.border = '1px solid #c9c9c9';
         }
         if (arr.every(name => name.value.length >= name.maxLength && nameInput.value != '') == true) {
